@@ -17,6 +17,7 @@ public class task3_calc {
         // System.out.printf("%d ",  number2);
         // System.out.printf("%d",  resultCalc);
         System.out.printf("%d %s %d = %f", number1, operationCalc, number2, resultCalc);
+        iScanner.close();
 
 
     }
