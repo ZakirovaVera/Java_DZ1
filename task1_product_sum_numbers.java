@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class task1_product_sum_numbers {
     public static void main(String[] args) {
         Scanner iScanner = new Scanner(System.in);
-        System.out.println("Введите число n: ");
+        System.out.print("Введите число n: ");
         int name = iScanner.nextInt();
         System.out.println(name +"-ое треугольное число = " + SumNumbers(name));
         System.out.printf("Произведение чисел от 1 до %d = " + ProductNumbers(name), name);
