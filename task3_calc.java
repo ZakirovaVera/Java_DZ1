@@ -12,14 +12,8 @@ public class task3_calc {
         System.out.print("Введите тип операции(+ - * /): ");
         String operationCalc = iScanner.next();
         float resultCalc = Calc(number1, number2, operationCalc);
-        // System.out.printf("%d ", number1);
-        // System.out.printf("%s ", operationCalc);
-        // System.out.printf("%d ",  number2);
-        // System.out.printf("%d",  resultCalc);
-        System.out.printf("%d %s %d = %f", number1, operationCalc, number2, resultCalc);
+        System.out.printf("%d %s %d = %.3f", number1, operationCalc, number2, resultCalc);
         iScanner.close();
-
-
     }
     public static float Calc(int num1, int num2, String oper) {
         float res = 0;
@@ -35,7 +29,7 @@ public class task3_calc {
                 res = num1 * num2;
                 break;
             case "/": 
-                res = num1 / num2;
+                res = (float) num1 / (float) num2;
                 break;
             default:
                 System.out.println("Error");
